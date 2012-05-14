@@ -83,7 +83,7 @@ module S3
       expires = options[:expires_at].to_i
       signature = generate_temporary_url_signature(options)
 
-      url = "http://#{S3::HOST}/#{bucket}/#{resource}"
+      url = "http://#{bucket}.#{S3::HOST}/#{resource}"
       url << "?AWSAccessKeyId=#{access_key}"
       url << "&Expires=#{expires}"
       url << "&Signature=#{signature}"

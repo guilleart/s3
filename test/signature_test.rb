@@ -210,7 +210,7 @@ class SignatureTest < Test::Unit::TestCase
       :method => :put,
       :headers => {'x-amz-acl' => 'public-read'}
     )
-    expected = "http://s3.amazonaws.com/johnsmith/photos/puppy.jpg?AWSAccessKeyId=0PN5J17HBGZHT7JJ3X82&Expires=1175046589&Signature=SDMxjIkOKIVR47nWfJ57UNPXxFM%3D"
+    expected = "http://johnsmith.s3.amazonaws.com/photos/puppy.jpg?AWSAccessKeyId=0PN5J17HBGZHT7JJ3X82&Expires=1175046589&Signature=SDMxjIkOKIVR47nWfJ57UNPXxFM%3D"
     assert_equal expected, actual
   end
 end
