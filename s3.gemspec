@@ -6,7 +6,7 @@ $LOAD_PATH.unshift File.expand_path("../lib", __FILE__)
 require "s3/version"
 
 Gem::Specification.new do |s|
-  s.name        = "s3"
+  s.name        = "memo_s3"
   s.version     = S3::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Jakub Kuźma"]
